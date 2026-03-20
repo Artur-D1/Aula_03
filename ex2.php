@@ -15,10 +15,12 @@
 if(isset($_POST["n"])){
     $n = $_POST["n"];
     $i = 1;
-     while($i <= $n){
-     echo "\n$i";
-     $i++;
-     }    
+    echo "números maiores que 5: ";
+    while($i <= $n){
+        if($i > 5)
+        echo("\n$i");
+        $i++;
+    }
 }
 ?>
 </body>

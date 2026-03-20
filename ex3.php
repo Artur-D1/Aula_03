@@ -15,10 +15,12 @@
 if(isset($_POST["n"])){
     $n = $_POST["n"];
     $i = 1;
-     while($i <= $n){
-     echo "\n$i";
-     $i++;
-     }    
+    $soma = 0;
+    while($i <= $n){
+        if($soma += $i)
+        echo("\n$i $soma");
+        $i++;
+    }
 }
 ?>
 </body>
